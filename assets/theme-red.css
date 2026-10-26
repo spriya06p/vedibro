@@ -1,0 +1,12 @@
+/* FESTIVE RED + GOLD. Loaded after store.css. */
+:root{--deep:#5C0A17;--purple:#B71C2E;--purple2:#8E1424;--gold:#F5B301;--gold-light:#FFE08A;--cream:#FFF6EA;--cream2:#FBE3CC;--ink:#3A0A12}
+.banner-fallback,.pagehead{background:radial-gradient(circle at 20% 20%,#E0505F,var(--purple) 55%,var(--deep))}
+.banner-fallback b{text-shadow:0 3px 0 #3A0A12,0 0 22px rgba(245,179,1,.6)}
+.ptable td,.c-img img,.noimg{border-color:#F0CDBB}
+.qty{border-color:#E2A98F}
+.ptable del{color:#8a6a62}
+footer{color:#FBE3CC}
+.logo img{box-shadow:0 3px 10px rgba(92,10,23,.35)}
+.ba{background:rgba(92,10,23,.55)}
+body:has(.checkout){background:radial-gradient(circle at 30% 10%,#E0505F,var(--purple) 50%,var(--deep)) fixed}
+@media(max-width:760px){.ptable td.c-actual{color:#7a5a52}}

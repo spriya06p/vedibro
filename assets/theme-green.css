@@ -1,0 +1,12 @@
+/* EMERALD GREEN + MARIGOLD. Loaded after store.css. */
+:root{--dont-a:#B71C2E;--dont-b:#E0505F;--deep:#063D2A;--purple:#0B7A4B;--purple2:#08603B;--gold:#FFB400;--gold-light:#FFE29A;--cream:#F0FAF4;--cream2:#D4F0DF;--ink:#0F3D2B}
+.banner-fallback,.pagehead{background:radial-gradient(circle at 20% 20%,#4FC98A,var(--purple) 55%,var(--deep))}
+.banner-fallback b{text-shadow:0 3px 0 #063D2A,0 0 22px rgba(255,180,0,.6)}
+.ptable td,.c-img img,.noimg{border-color:#BFE3CF}
+.qty{border-color:#93CDB0}
+.ptable del{color:#5f7d6f}
+footer{color:#D4F0DF}
+.logo img{box-shadow:0 3px 10px rgba(6,61,42,.35)}
+.ba{background:rgba(6,61,42,.55)}
+body:has(.checkout){background:radial-gradient(circle at 30% 10%,#4FC98A,var(--purple) 50%,var(--deep)) fixed}
+@media(max-width:760px){.ptable td.c-actual{color:#4f6b5e}}

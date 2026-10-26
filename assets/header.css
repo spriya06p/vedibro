@@ -1,0 +1,58 @@
+/* ===== Site header: top banner image + colour menu bar. Colours come from the active theme. ===== */
+.sh{background:#fff}
+.sh-banner{display:block;line-height:0;text-decoration:none}
+.sh-banner img{display:block;width:100%;height:auto}
+.sh-fallback{line-height:1.2;padding:34px 4%;text-align:center;font-size:2rem;font-weight:800;color:#fff;background:var(--purple)}
+.sh-btn{display:none}
+
+.sh-nav{display:flex;flex-wrap:wrap;background:var(--purple);padding:0 4%;border-top:4px solid var(--gold)}
+.sh-nav a{position:relative;color:#fff;text-decoration:none;font-size:1.08rem;letter-spacing:.5px;padding:18px 31px;transition:background .25s,color .25s}
+.sh-nav a:hover{background:rgba(255,255,255,.16)}
+.sh-nav a.on,.sh-nav a.on:hover{background:var(--gold);color:var(--purple2)}
+.sh-nav a.adm{margin-left:auto;font-size:.85rem;opacity:.6}
+
+@media(max-width:900px){
+  .sh-btn{display:flex;align-items:center;justify-content:flex-end;width:100%;background:var(--purple);border:0;border-top:4px solid var(--gold);padding:11px 16px;cursor:pointer}
+  .sh-btn b{background:#fff;color:var(--purple2);font-size:1.05rem;font-weight:600;padding:8px 18px;border-radius:6px}
+  .sh-btn b::before{content:'\2630  '}
+  .sh-nav{display:none;flex-direction:column;padding:0;border-top:0}
+  .sh-nav.open{display:flex}
+  .sh-nav a{padding:14px 18px;border-top:1px solid rgba(255,255,255,.22)}
+  .sh-nav a.adm{margin-left:0}
+}
+
+/* Home page: starts from the home banner, the menu floats on top of it (computer and phone) */
+.sh-overlay{position:absolute;left:0;right:0;z-index:31;background:transparent}
+.sh-overlay .sh-banner{display:none}
+@media(min-width:901px){
+  .sh-overlay .sh-nav{background:rgba(0,0,0,.45);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);border-top:0}
+}
+/* COMPUTER ONLY: home page menu bar is a normal solid bar, the banner starts BELOW it */
+@media(min-width:901px){
+  .sh-overlay{position:static;background:#fff}
+  .sh-overlay .sh-nav{background:var(--purple);-webkit-backdrop-filter:none;backdrop-filter:none;border-top:4px solid var(--gold)}
+}
+@media(max-width:900px){
+  .sh-overlay .sh-btn{background:rgba(0,0,0,.45);border-top:0}
+  .banner.home-ban{display:block!important}      /* show the home banner on phones too */
+}
+
+/* Phone banner height: change the 200px below (any value from 150px to 290px works, no zoom) */
+@media(max-width:760px){
+  .banner.home-ban img{width:100%;height:280px;object-fit:cover;object-position:center}
+}
+
+/* ===== PHONE ONLY: home = single banner (no slideshow), other pages = no banner ===== */
+@media(max-width:760px){
+  .banner.home-ban .ba{display:none!important}                         /* no prev/next arrows */
+  #pageBanner:not(.has-mob){display:none!important}
+  #pageBanner .ba{display:none!important}
+  #pageBanner picture.nomob{display:none!important}
+  #banner:not(.home-ban):not(.has-mob){display:none!important}
+}
+@media(min-width:761px){
+  #pageBanner picture.mobonly{display:none!important}
+  .banner.nodesk{display:none!important}                                  /* About / Safety / Contact pages: no banner */
+}
+/* Hide the shop-name text block above the menu on all pages */
+.sh-banner.sh-fallback{display:none}

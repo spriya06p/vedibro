@@ -1,0 +1,12 @@
+/* CLASSIC THEME (Dark Purple + Gold). Loaded after store.css when selected in Admin > Theme. */
+:root{--deep:#160a2b;--purple:#2d1258;--purple2:#4a2088;--gold:#d9a521;--gold-light:#f3d675;--cream:#fbf6e9;--cream2:#f3ead2;--ink:#1b0b33}
+.banner-fallback,.pagehead{background:radial-gradient(circle at 20% 20%,#5b2aa8,var(--purple) 55%,var(--deep))}
+.banner-fallback b{text-shadow:0 3px 0 #000,0 0 22px rgba(217,165,33,.55)}
+.ptable td,.c-img img,.noimg{border-color:#e2d6b4}
+.qty{border-color:#c9b98a}
+.ptable del{color:#8a7a9e}
+footer{color:#d9cfe8}
+.logo img{box-shadow:0 3px 10px rgba(22,10,43,.4)}
+.ba{background:rgba(22,10,43,.55)}
+body:has(.checkout){background:radial-gradient(circle at 30% 10%,#5b2aa8,var(--purple) 50%,var(--deep)) fixed}
+@media(max-width:760px){.ptable td.c-actual{color:#6b5a86}}

@@ -1,0 +1,10 @@
+/* Confirmation page theme (Dark Purple + Gold). Loaded after store.css */
+body{background:radial-gradient(circle at 30% 10%,#FF7FA8,var(--purple) 50%,var(--deep)) fixed;min-height:100vh}
+.checkout{max-width:760px;margin:0 auto;padding:30px 16px}
+.checkout-card{background:#fff;color:var(--ink);border-radius:14px;padding:26px;border-top:5px solid var(--gold);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.checkout-card.success{text-align:center}
+.checkout-card h1{color:var(--purple);margin:8px 0}
+.success-icon{width:64px;height:64px;margin:0 auto 10px;border-radius:50%;background:var(--gold);color:var(--ink);font-size:36px;font-weight:800;line-height:64px}
+.eyebrow{color:var(--purple2);letter-spacing:2px;font-size:11px;font-weight:700}
+.checkout-card .btn{margin:14px 0}
+.checkout-card a{color:var(--purple2)}

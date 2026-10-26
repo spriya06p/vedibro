@@ -1,0 +1,10 @@
+/* EMERALD GREEN ADMIN THEME. Loaded after admin.css. */
+:root{--navy:#0F3D2B;--sky:#FFB400;--sky-dark:#08603B;--sky-tint:#F0FAF4;--yellow:#FFB400;--yellow-dark:#E09E00}
+body{background:#F2FBF6;color:#0F3D2B}
+.adminbar{background:#063D2A;border-bottom-color:#FFB400}
+.adminbar b,.adminbar a:hover{color:#FFB400}
+.cards div{background:#0B7A4B;color:#fff;border-bottom-color:#FFB400}
+.cards b{color:#FFE29A}.cards span{color:#D4F0DF}
+th{background:#063D2A;color:#FFE29A}
+input,select,textarea{border-color:#BFE0CF}
+.login{background:radial-gradient(circle at 30% 20%,#4FC98A,#0B7A4B 50%,#063D2A)}

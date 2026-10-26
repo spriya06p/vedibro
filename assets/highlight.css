@@ -1,0 +1,14 @@
+/* Highlight bar (top scrolling strip). Same markup/CSS on every page + admin preview. */
+.salebar{background:var(--deep);color:var(--gold-light);font-weight:700;font-size:14px;line-height:20px;overflow:hidden;white-space:nowrap;padding:9px 0;border-bottom:2px solid var(--gold)}
+.salebar .hl-track{display:flex;width:max-content;animation:hlMove var(--t,40s) linear infinite;will-change:transform;backface-visibility:hidden}
+.salebar:hover .hl-track{animation-play-state:paused}
+.salebar .hl-grp{display:flex;flex:none;align-items:center;justify-content:space-around;min-width:100vw}
+.salebar .hl-grp span{padding:0 28px}
+.salebar .hl-grp .hl-sep{padding:0;opacity:.7}
+@keyframes hlMove{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@media(prefers-reduced-motion:reduce){
+  .salebar{white-space:normal;text-align:center}
+  .salebar .hl-track{animation:none;width:auto;justify-content:center}
+  .salebar .hl-grp{flex-wrap:wrap;justify-content:center;min-width:0}
+  .salebar .hl-grp+.hl-grp{display:none}
+}

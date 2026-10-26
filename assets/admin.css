@@ -1,0 +1,60 @@
+/* ADMIN THEME: VediBro Navy + Sky Blue + Yellow */
+:root{--navy:#14225E;--sky:#2DBBEE;--sky-dark:#0B7FB3;--sky-tint:#EAF8FE;--yellow:#FDE405;--yellow-dark:#E8CE00}
+*{box-sizing:border-box}
+body{margin:0;background:#F2F7FB;color:var(--navy);font:14px Arial,sans-serif}
+.adminbar{min-height:64px;background:var(--navy);color:#fff;padding:8px 4%;display:flex;align-items:center;flex-wrap:wrap;gap:8px 22px;border-bottom:4px solid var(--yellow)}
+.adminbar b{margin-right:auto;color:var(--yellow)}
+.adminbar a{color:#D6E4FF;text-decoration:none}.adminbar a:hover{color:var(--yellow)}
+.admin{max-width:1100px;margin:35px auto;padding:0 20px}.admin h1{color:var(--navy)}
+.narrow{max-width:700px}
+.card{background:#fff;padding:25px;border-radius:10px;margin:20px 0;box-shadow:0 5px 20px rgba(20,34,94,.10);overflow-x:auto;border-top:4px solid var(--sky)}
+.cards{display:flex;gap:15px;flex-wrap:wrap}
+.cards div{background:var(--sky);color:var(--navy);padding:22px;min-width:150px;border-radius:8px;border-bottom:4px solid var(--yellow);font-weight:700}
+.cards b{display:block;font-size:28px;color:var(--navy)}.cards span{color:var(--navy)}
+.section-title{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:12px;border-bottom:1px solid #E3ECF3}
+th{background:var(--navy);color:var(--yellow)}
+tr:hover td{background:var(--sky-tint)}
+a{color:var(--sky-dark)}
+label{display:block;font-weight:700;margin:15px 0}
+input,select,textarea{display:block;width:100%;padding:12px;margin-top:7px;border:1px solid #C5D6E4;border-radius:5px;background:#fff;font:inherit;color:var(--navy)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--sky)}
+button,.button{display:inline-block;background:var(--yellow);color:var(--navy);font-weight:700;border:0;padding:11px 18px;border-radius:5px;text-decoration:none;cursor:pointer}
+button:hover,.button:hover{background:var(--yellow-dark)}
+.login{min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 30% 20%,var(--sky),#1F4E9E 45%,var(--navy))}
+.login .card{width:min(420px,90vw);border-top:5px solid var(--yellow)}
+.error{background:#ffe7e7;color:#9a2020;padding:10px;border-radius:5px}
+.eyebrow{color:var(--sky-dark);letter-spacing:2px;font-size:11px;font-weight:bold}
+ 
+/* ===== Menu dropdown + mobile-friendly tables ===== */
+.adminbar{position:relative}
+.admnav{display:contents}
+.admbtn{display:none}
+.adminbar a.on{color:var(--yellow)}
+ 
+@media(max-width:760px){
+  .adminbar{flex-wrap:nowrap;justify-content:space-between;gap:10px;min-height:58px;padding:8px 4%}
+  .adminbar b{margin-right:0;font-size:15px}
+  .admbtn{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;font-size:15px}
+  .admnav{display:none;position:absolute;left:0;right:0;top:100%;z-index:80;background:inherit;border-bottom:4px solid var(--yellow);box-shadow:0 14px 26px rgba(0,0,0,.35)}
+  .admnav.open{display:block}
+  .admnav a{display:block;padding:14px 5%;font-size:16px;border-top:1px solid rgba(255,255,255,.14)}
+  .admnav a.on{border-left:5px solid var(--yellow);padding-left:calc(5% - 5px);background:rgba(255,255,255,.08)}
+ 
+  .admin{margin:18px auto;padding:0 12px}
+  .admin h1{font-size:24px}
+  .card{padding:16px}
+ 
+  .rt,.rt tbody,.rt tr,.rt td{display:block;width:100%}
+  .rt thead{display:none}
+  .rt tr{margin:0 0 14px;padding:6px 0;background:#fff;border:1px solid #D6E4EE;border-left:5px solid var(--sky);border-radius:10px;box-shadow:0 3px 10px rgba(20,34,94,.08)}
+  .rt tr:hover td{background:none}
+  .rt td{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:7px 12px;border:0;text-align:right;overflow-wrap:anywhere}
+  .rt td[data-label]::before{content:attr(data-label);flex:none;font-weight:700;color:var(--sky-dark);text-align:left}
+  .rt td[colspan]{display:block;text-align:center}
+  .rt td:not([data-label]){justify-content:flex-end}
+  .rt td img{max-width:70px;height:auto}
+  .rt td input,.rt td select{width:auto;min-width:0;max-width:150px;margin:0}
+}
+ 

@@ -1,0 +1,10 @@
+/* FESTIVE RED ADMIN THEME. Loaded after admin.css. */
+:root{--navy:#3A0A12;--sky:#F5B301;--sky-dark:#8E1424;--sky-tint:#FFF6EA;--yellow:#F5B301;--yellow-dark:#DDA000}
+body{background:#FFF9F2;color:#3A0A12}
+.adminbar{background:#5C0A17;border-bottom-color:#F5B301}
+.adminbar b,.adminbar a:hover{color:#F5B301}
+.cards div{background:#B71C2E;color:#fff;border-bottom-color:#F5B301}
+.cards b{color:#FFE08A}.cards span{color:#FBE3CC}
+th{background:#5C0A17;color:#FFE08A}
+input,select,textarea{border-color:#E8CDBF}
+.login{background:radial-gradient(circle at 30% 20%,#E0505F,#B71C2E 50%,#5C0A17)}

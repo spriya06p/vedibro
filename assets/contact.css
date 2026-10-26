@@ -1,0 +1,43 @@
+/* ===== Contact page ===== */
+.ct{position:relative;overflow:hidden;background:var(--cream)}
+.ct-bg{position:absolute;inset:0;pointer-events:none}
+.ct-bg span{position:absolute;font-size:64px;opacity:.12;animation:ctFloat 9s ease-in-out infinite}
+.ct-bg span:nth-child(1){left:3%;top:6%}.ct-bg span:nth-child(2){right:5%;top:12%;animation-delay:-3s;font-size:78px}
+.ct-bg span:nth-child(3){left:7%;top:50%;animation-delay:-5s}.ct-bg span:nth-child(4){right:8%;top:55%;animation-delay:-7s}
+@keyframes ctFloat{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-26px) rotate(8deg)}}
+.ct-wrap{position:relative;z-index:1;max-width:1150px;margin:0 auto;padding:54px 5% 56px}
+
+.ct-intro{text-align:center;margin-bottom:44px}
+.ct-intro h2{margin:0;font-size:clamp(1.7rem,3.6vw,2.5rem);color:var(--ink)}
+.ct-wave{display:block;margin:12px auto 10px;width:170px;height:14px;background:radial-gradient(circle at 10px 0,transparent 8px,var(--purple) 9px,var(--purple) 12px,transparent 13px) 0 0/20px 14px repeat-x;animation:ctWave 1.4s linear infinite}
+@keyframes ctWave{to{background-position:20px 0}}
+.ct-intro p{margin:0;font-size:1.05rem}
+
+.ct-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.ct-card{text-align:center;color:#fff;padding:34px 22px 30px;border-radius:8px;background:linear-gradient(160deg,var(--purple),var(--purple2));box-shadow:0 10px 26px rgba(0,0,0,.25);box-shadow:0 10px 26px color-mix(in srgb,var(--purple2) 40%,transparent);transition:opacity .7s ease,transform .5s ease,box-shadow .5s ease}
+.ct-card:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 18px 36px rgba(0,0,0,.3);box-shadow:0 18px 36px color-mix(in srgb,var(--purple2) 55%,transparent)}
+.ct-ico{color:var(--gold);animation:ctBounce 2.6s ease-in-out infinite}
+.ct-ico.ring{animation:ctShake 2.6s ease-in-out infinite}
+.ct-card:nth-child(2) .ct-ico{animation-delay:.3s}.ct-card:nth-child(3) .ct-ico{animation-delay:.6s}
+@keyframes ctBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes ctShake{0%,55%,100%{transform:rotate(0)}62%{transform:rotate(-16deg)}70%{transform:rotate(14deg)}78%{transform:rotate(-10deg)}86%{transform:rotate(6deg)}}
+.ct-card h3{margin:12px 0 8px;font-size:1.35rem;letter-spacing:.5px;text-transform:uppercase}
+.ct-card p{margin:0;line-height:1.7;font-size:1rem}
+.ct-card a{color:#fff;text-decoration:none;word-break:break-word;transition:color .3s}
+.ct-card a:hover{color:var(--gold);text-decoration:underline}
+
+.ct-map{position:relative;z-index:1;border-top:6px solid var(--purple);line-height:0}
+.ct-map iframe{width:100%;height:400px;border:0}
+
+/* scroll reveal */
+.rv{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.ct-card.rv.in{transition-delay:0s}
+.ct-card.rv{transition-delay:var(--d,0s)}
+@media(max-width:820px){.ct-wrap{padding-top:36px}.ct-map iframe{height:320px}}
+@media(prefers-reduced-motion:reduce){.ct *{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+/* Instagram card: whole box is a link, no underline anywhere */
+a.ct-card,a.ct-card:hover,a.ct-card:focus{display:block;color:#fff!important;text-decoration:none!important}
+a.ct-insta h3,a.ct-insta p{text-decoration:none!important}
+a.ct-insta p{color:var(--gold);font-weight:700;font-size:1.1rem}
+.ct-card:nth-child(4) .ct-ico{animation-delay:.9s}

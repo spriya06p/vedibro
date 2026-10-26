@@ -1,0 +1,12 @@
+/* CLASSIC ADMIN THEME (Dark Purple + Gold). Loaded after admin.css when selected in Admin > Theme. */
+:root{--navy:#160a2b;--sky:#d9a521;--sky-dark:#4a2088;--sky-tint:#fbf6e9;--yellow:#d9a521;--yellow-dark:#c89535}
+body{background:#f5f1fa;color:#1b0b33}
+.adminbar{background:#160a2b;border-bottom-color:#d9a521}
+.adminbar b,.adminbar a:hover{color:#d9a521}
+.admin h1{color:#2d1258}
+.cards div{background:#2d1258;color:#fff;border-bottom-color:#d9a521}
+.cards b{color:#d9a521}.cards span{color:#d9cfe8}
+th{background:#2d1258;color:#f3d675}
+.card{border-top-color:#d9a521}
+.login{background:radial-gradient(circle at 30% 20%,#5b2aa8,#2d1258 55%,#160a2b)}
+input,select,textarea{color:#1b0b33;border-color:#d6cce6}

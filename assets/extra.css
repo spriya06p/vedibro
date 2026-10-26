@@ -1,0 +1,18 @@
+[hidden]{display:none!important}
+.cat-head{margin:26px 0 8px;padding:10px 14px;border-radius:10px;background:rgba(255,190,60,.15);font-size:1.05rem}
+.cat-head small{opacity:.8;font-weight:500}
+.stickybar{position:sticky;bottom:0;z-index:20;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;padding:12px 18px;background:var(--ink);color:#fff;border-top:2px solid var(--gold)}
+.stickybar div{display:flex;flex-direction:column;font-size:.8rem}.stickybar b{font-size:1.05rem}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.65);display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:16px}
+.modal-box{background:#fff;color:var(--ink);width:100%;max-width:520px;border-radius:14px;padding:20px;margin:auto}
+.modal-box label{display:block;margin:10px 0;font-size:.9rem;font-weight:600}
+.modal-box input,.modal-box select,.modal-box textarea{display:block;width:100%;margin-top:4px;padding:10px;border:1px solid #ccd;border-radius:8px;font:inherit;box-sizing:border-box}
+.minnote span{display:inline-block;margin:2px 8px 2px 0;font-size:.8rem}
+.modal-box .review div{display:flex;justify-content:space-between;padding:4px 0}
+.modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:14px}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--purple)}
+.modal-box .error{color:#c0182b;margin:8px 0}
+.warn{background:#fff6dc;color:#4a3800;border-radius:8px;padding:10px;text-align:left;font-size:.9rem}
+.pdf-area{display:block!important;background:#fff;color:#000;text-align:left;padding:14px;margin:14px 0;border:1px solid #ddd}
+.pdf-area table{width:100%;border-collapse:collapse;font-size:.85rem}.pdf-area th,.pdf-area td{border:1px solid #bbb;padding:5px;text-align:left}
+.sheet-head{text-align:center}.sheet-tot{text-align:right}

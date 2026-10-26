@@ -1,0 +1,14 @@
+/* ROYAL NAVY + YELLOW (logo colours, pink touches). Loaded after store.css. */
+:root{--deep:#0A1235;--purple:#14225E;--purple2:#2A3B8F;--gold:#FDE405;--gold-light:#FFF3A0;--cream:#F1F4FF;--cream2:#DDE3FA;--ink:#14225E}
+.banner-fallback,.pagehead{background:radial-gradient(circle at 20% 20%,#4C63C9,var(--purple) 55%,var(--deep))}
+.banner-fallback b{text-shadow:0 3px 0 #000,0 0 22px rgba(253,228,5,.6)}
+.ptable td,.c-img img,.noimg{border-color:#C9D2F0}
+.qty{border-color:#A9B6E3}
+.ptable del{color:#6b7396}
+footer{color:#D5DCF5}
+.logo img{box-shadow:0 3px 10px rgba(10,18,53,.4)}
+.ba{background:rgba(10,18,53,.55)}
+.line-total,.ptable td.c-price{color:#D8236A}
+.mobilebar b{color:#FF7FA8}
+body:has(.checkout){background:radial-gradient(circle at 30% 10%,#4C63C9,var(--purple) 50%,var(--deep)) fixed}
+@media(max-width:760px){.ptable td.c-actual{color:#5b6488}.ptable td.c-price{color:#D8236A}}

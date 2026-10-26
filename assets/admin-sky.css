@@ -1,0 +1,8 @@
+/* SKY BLUE ADMIN THEME. Loaded after admin.css. */
+:root{--navy:#063E5C;--sky:#0A86BF;--sky-dark:#076A99;--sky-tint:#EAF6FC;--yellow:#FDE405;--yellow-dark:#E8CE00}
+body{background:#EFF7FB;color:#063E5C}
+.adminbar{background:#063E5C;border-bottom-color:#FDE405}
+.cards div{background:#0A86BF;color:#fff;border-bottom-color:#FDE405}
+.cards b{color:#FDE405}.cards span{color:#E6F6FF}
+th{background:#063E5C;color:#FDE405}
+.login{background:radial-gradient(circle at 30% 20%,#6FD3F7,#0A86BF 45%,#063E5C)}
